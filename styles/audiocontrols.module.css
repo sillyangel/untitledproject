@@ -59,7 +59,7 @@
   }
   
   /* Add styles to position the song time and duration */
-  #audio-controls {
+  #audiocontrols {
     display: flex;
     align-items: center;
     justify-content: space-between;
