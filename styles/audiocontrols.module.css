@@ -1,0 +1,81 @@
+
+
+#volume {
+    display: none;
+    /* Hidden by default */
+  }
+  
+  .audiocontrols {
+    display: flex;
+    align-items: center;
+    background-color: #242424;
+    color: #ffffff;
+    padding: 10px;
+    position: fixed;
+    width: 99%;
+    font-size: 16px;
+    bottom: 0px;
+    border-top: 2px solid #333;
+  }
+  
+  .audiocontrols button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+    font-size: 24px;
+    /* Increase icon size */
+  }
+  
+  .audiocontrols hr {
+    width: 100%;
+    /* Full width line */
+    margin-top: 10px;
+    /* Space between line and text */
+    border: 1px solid #555;
+    /* Line color */
+  }
+  
+  .audiocontrols progress {
+    width: 80%;
+    /* 25% smaller progress bar */
+  }
+  
+  /* Hide the default audio player */
+  .audio {
+    display: none;
+  }
+  
+  .currentTrack {
+    text-align: center;
+    margin-left: 10px;
+    font-size: inherit;
+  }
+  
+  .currentTrack2 {
+    color: inherit;
+    font-size: 24px;
+    font-weight: 400;
+  }
+  
+  /* Add styles to position the song time and duration */
+  #audio-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  #songTime,
+  #songDuration {
+    white-space: nowrap;
+    margin: 0 10px;
+    /* Adjust the margin as needed */
+  }
+  
+  #songTime2,
+  #songDuration2 {
+    white-space: nowrap;
+    margin: 0 10px;
+    /* Adjust the margin as needed */
+    color: inherit;
+  }

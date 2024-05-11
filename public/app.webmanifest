@@ -1,0 +1,60 @@
+{
+  "name": "offbrand spotify",
+  "short_name": "offbrand spotify",
+  "description": "a very offbrand clone of spotify",
+  "background_color": "#222222",
+  "categories": ["music", "entertainment"],
+  "start_url": "./",
+  "id": "/",
+  "display_override": ["window-controls-overlay"],
+  "display": "standalone",
+  "scope": "./",
+  "icons": [
+      { 
+         "src": "./assets/icons/favicon.ico", 
+         "type": "image/x-icon", 
+         "sizes": "16x16 32x32" },
+      { 
+         "src": "./assets/icons/icon-192.png", 
+         "type": "image/png", 
+         "sizes": "192x192" },
+      { 
+         "src": "./assets/icons/icon-512.png", 
+         "type": "image/png", 
+         "sizes": "512x512" },
+      { 
+         "src": "./assets/icons/icon-192-maskable.png", 
+         "type": "image/png", 
+         "sizes": "192x192", 
+         "purpose": "maskable" },
+      { 
+         "src": "./assets/icons/icon-512-maskable.png", 
+         "type": "image/png", 
+         "sizes": "512x512", 
+         "purpose": "maskable" 
+      }
+   ],
+   "screenshots": [
+      {
+       "src": "assets/preview1.png",
+        "sizes": "1365x720",
+        "type": "image/png",
+        "platform": "chromeos",
+        "form_factor": "wide",
+        "label": "Preview 1"
+      },
+      {
+        "src": "assets/preview2.png",
+        "sizes": "750x1334",
+        "type": "image/png",
+        "form_factor": "narrow",
+        "label": "Preview 2"
+      }
+   ],
+   "protocol_handlers": [
+      {
+        "protocol": "web+offbrand",
+        "url": "/play?type=%s"
+      }
+    ]  
+}

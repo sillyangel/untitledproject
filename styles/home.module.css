@@ -1,11 +1,558 @@
-.main {
-  padding: 20px 20px 60px;
-  max-width: 680px;
-  margin: 0 auto;
+@font-face {
+  font-family: circular;
+  src: url("/assets/fonts/CircularSpotifyTxT-Medium.woff2") format("woff2");
 }
 
-.hr {
+
+.body {
+  background-color: #222;
+  color: #fff;
+  font-family: circular, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.h1 {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+
+.h2 {
+font-weight: normal;
+  font-size: 40px;
+}
+
+.reqformgg {
+  text-align: right;
+  padding: 20px;
+  font-size: 15px;
+}
+
+.a {
+  color: inherit;
+  margin: 10px;
+  padding-left: 20px;
+}
+
+/* Style the custom input audio controls */
+
+
+.topnav {
+  width: 100%;
+  top: 0px;
+  text-align: left;
+  padding: 20px;
+  font-size: 15px;
+  border-bottom: 2px solid #333;
+}
+
+.playerm {
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  border-top: 1px solid #333;
+}
+
+
+
+#playlistContainer img {
+  width: 120px;
+  height: 120px;
+}
+
+#playlistContainer {
+  display: inline-block;
+  /* Make it inline to adjust to content */
+}
+
+#title-bar {
+  position: fixed;
+  left: env(titlebar-area-x, 0);
+  top: env(titlebar-area-y, 0);
+  height: env(titlebar-area-height, 50px);
+  width: env(titlebar-area-width, 100%);
+  -webkit-app-region: drag;
+}
+
+#accountsettings {
+  width: fit-content;
+  /* padding-left: 3vw; */
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: 6vw;
+}
+
+#songselector {
+    padding-left: 2vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: 12dvh;
+}
+
+#albumpage {
+  width: fit-content;
+  padding-left: 20px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: 6%;
+}
+#playlistpage {
+  width: fit-content;
+  padding-left: 20px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: 6%;
+}
+
+.audio-controls-full {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  /* Ensure it appears on top of other elements */
+}
+
+.trackandartiststuff {
+  align-content: start !important;
+}
+
+.trackandartiststuff p {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.audio-controls-full img {
+  width: 300px;
+  margin-bottom: 10px;
+  height: 300px;
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+}
+
+.audio-controls-full button {
+  background: none;
   border: none;
-  border-bottom: 1px solid #efefef;
-  margin: 3em auto;
+  color: inherit;
+  cursor: pointer;
+  font-size: 36px;
+  margin: 10px;
+}
+
+.audio-controls-full progress {
+  width: 500px;
+  padding-top: 5px;
+  margin-top: 5px;
+  /* 25% smaller progress bar */
+}
+
+#arrow-button2 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#bottombuttons {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+#songselector button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#songselector h2 {
+  width: auto;
+  height: auto;
+}
+
+#lilbrary {
+  width: fit-content;
+  /* padding-left: 3vw; */
+  /* margin-top: 10px; */
+  /* display: flex; */
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: 6vw;
+}
+
+#searching {
+  width: fit-content;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-left: 2vw;
+  display: flex;
+  margin-left: 12dvh;
+}
+
+#searching input[type=text] {
+  width: 1000px;
+  box-sizing: border-box;
+  border: 2px solid #acacac;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('/assets/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+
+#searching input[type=text] {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  max-width: 174%;
+  outline: none;
+}
+
+#lilbrary button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#mlogin {
+  right: -60px;
+  padding-left: 20px;
+  margin-top: 0 10px;
+  float: right;
+  width: 90%;
+  height: auto;
+  display: grid;
+  align-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.mnkjiu {
+  display: flex;
+  max-width: 94vh;
+}
+
+.footer {
+  float: right;
+  width: 90%;
+  height: auto;
+  display: flex;
+  align-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+#mlogin button {
+  box-sizing: border-box;
+  border: 2px solid #131313;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #1e1e1e;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 20px;
+  color: #fff;
+}
+
+#mlogin h2 {
+  font-size: 40px;
+}
+
+.h3 {
+  font-size: 25px;
+  font-weight: normal;
+}
+
+.input[type=email]:focus {
+  border: 3px solid #ffffff;
+}
+
+.input[type=email] {
+  box-sizing: border-box;
+  border: 2px solid #acacac;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+
+.album-container {
+  display: flex;
+  flex-direction: row;
+  /* Ensure items are laid out horizontally */
+  overflow-x: auto;
+  white-space: nowrap;
+  width: 100%;
+  /* Ensure it spans the full width of its parent */
+}
+
+.album-container>div {
+  /* Assuming the child elements are divs */
+  min-width: 160px;
+  /* Example min-width, adjust as needed */
+  margin-right: 10px;
+  /* Adjust spacing between items */
+}
+
+.input[type=password] {
+  box-sizing: border-box;
+  border: 2px solid #acacac;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+
+.container input {
+  box-sizing: border-box;
+  border: 2px solid #acacac;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+
+#list-holder li {
+  color: white;
+  cursor: pointer;
+}
+
+.dark-mode {
+  background-color: white;
+  color: #222;
+}
+
+#user {
+  right: 100px;
+  position: absolute;
+  text-decoration: none;
+  font-size: 30px;
+  margin-bottom: 33.2px;
+  margin-top: 33.2px;
+}
+
+#user {
+  cursor: pointer;
+}
+
+#accountsettings button {
+    box-sizing: border-box;
+    border: 2px solid #030303;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #222222;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 20px;
+    color: #fff;
+}
+
+#accountsettings button:hover {
+  opacity: 1;
+}
+
+#accountsettings input[type=text] {
+  box-sizing: border-box;
+  border: 2px solid #acacac;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+
+#accountsettings input[type=url] {
+  box-sizing: border-box;
+  border: 2px solid #acacac;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+
+.playlist-item img {
+  width: 120px;
+  height: 120px;
+}
+
+.playlist-item button {
+  border: none;
+  background: #5c5c5c;
+}
+
+#deletebutton {
+  background: red;
+}
+
+.playlist-item button {
+  display: inline;
+  color: #fff;
+  font-weight: bolder;
+  margin: 2px;
+}
+
+.playlist-item {
+  left: 20px;
+  padding-left: 20px;
+  margin-top: 0 10px;
+  float: right;
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+#settings {
+  width: fit-content;
+  margin-left: 6vw;
+}
+
+/* Color of the progress bar */
+#progress::-webkit-progress-value {
+  background-color: lightblue;
+  /* You can change this color to the one you prefer */
+}
+
+#footer a {
+  font-weight: bolder;
+}
+
+.grecaptcha-badge {
+  visibility: hidden;
+}
+
+.album-small {
+  width: 105px;
+  height: 105px;
+}
+
+.album-medium {
+  width: 140px;
+  height: 140px;
+}
+
+.album-large {
+  width: 160px;
+  height: 160px;
+}
+
+#buttonys {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#list-holder {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+  left: 0px;
+  height: auto;
+  border-right: 5px;
+}
+
+#lyrics {
+  max-width: 200px;
+  max-height: 300px;
+}
+
+.iframe {
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 10000;
+  border: none;
+
+}
+
+
+.mediacontrols {
+  position: fixed;
+  width: 47%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: rgb(49, 58, 62); 
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
 }

@@ -8,6 +8,10 @@
 # testing
 /coverage
 
+playmusic/
+/playmusic
+
+
 # next.js
 /.next/
 /out/
