@@ -233,15 +233,7 @@
   max-width: 94vh;
 }
 
-.footer {
-  float: right;
-  width: 90%;
-  height: auto;
-  display: flex;
-  align-content: center;
-  text-align: center;
-  align-items: center;
-}
+
 
 #mlogin button {
   box-sizing: border-box;

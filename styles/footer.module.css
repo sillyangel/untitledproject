@@ -1,0 +1,9 @@
+.footers {
+    float: right;
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+}

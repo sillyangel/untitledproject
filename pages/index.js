@@ -7,8 +7,8 @@ function Home() {
   return (
     <main className={styles.body}>
       <Sidebarmen/>
-      <Audiocontrols/>
       <Footer/>
+      <Audiocontrols/>
     </main>
   )
 }
