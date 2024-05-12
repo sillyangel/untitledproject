@@ -12,16 +12,6 @@
   padding: 0;
 }
 
-.h1 {
-  font-size: 30px;
-  font-weight: normal;
-}
-
-
-.h2 {
-font-weight: normal;
-  font-size: 40px;
-}
 
 .reqformgg {
   text-align: right;
@@ -29,11 +19,7 @@ font-weight: normal;
   font-size: 15px;
 }
 
-.a {
-  color: inherit;
-  margin: 10px;
-  padding-left: 20px;
-}
+
 
 /* Style the custom input audio controls */
 

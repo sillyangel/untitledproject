@@ -27,21 +27,11 @@
     /* Increase icon size */
   }
   
-  .audiocontrols hr {
-    width: 100%;
-    /* Full width line */
-    margin-top: 10px;
-    /* Space between line and text */
-    border: 1px solid #555;
-    /* Line color */
-  }
   
   .audiocontrols progress {
     width: 80%;
-    /* 25% smaller progress bar */
   }
   
-  /* Hide the default audio player */
   .audio {
     display: none;
   }
@@ -49,7 +39,10 @@
   .currentTrack {
     text-align: center;
     margin-left: 10px;
+    margin-bottom: 0px;
+    margin-right: 10px;
     font-size: inherit;
+    
   }
   
   .currentTrack2 {

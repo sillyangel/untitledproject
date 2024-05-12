@@ -1,9 +1,8 @@
 import styles from '../styles/audiocontrols.module.css'
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronUp, faStepBackward, faStepForward, faPlay, faPause, faVolumeUp } from '@fortawesome/free-solid-svg-icons';
+import { faChevronUp, faStepBackward, faStepForward, faPlay , faVolumeUp } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
-import { text } from '@fortawesome/fontawesome-svg-core';
 
 const stylecurrentartist = {
     fontSize: '10px',
@@ -12,10 +11,6 @@ const stylecurrentartist = {
     marginTop: '0px',
 };
 
-const stylecurrentTrack = {
-    marginBottom: '0px',
-    marginRight: '10px',
-};
 
 function Audiocontrols() {
     const [volume, setVolume] = useState(0);
@@ -28,8 +23,8 @@ function Audiocontrols() {
             <div class="album-cover">
                 <Image id="albumCover" src="/assets/nonealbum.png" alt="Album Cover" width={60} height={60} />
             </div>
-        <div class="tranks">
-          <p class="currentTrack" style={stylecurrentTrack}></p>
+        <div>
+          <p className={styles.stylecurrentTrack}></p>
           <p class="currentartist" style={stylecurrentartist}></p>
         </div>
             <button aria-label="Back" onclick="previousTrack()">
@@ -51,7 +46,7 @@ function Audiocontrols() {
             <button onclick="openfullplayer()" aria-label="Open full screen player" id="arrow-button">
                 <FontAwesomeIcon icon={faChevronUp} />
             </button>
-            </div>
+        </div>
     )
 }
 
