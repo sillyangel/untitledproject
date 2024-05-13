@@ -1,0 +1,20 @@
+
+#songselector {
+    padding-left: 2vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: 12dvh;
+}
+
+#user {
+    right: 100px;
+    position: absolute;
+    text-decoration: none;
+    font-size: 30px;
+    margin-bottom: 33.2px;
+    margin-top: 33.2px;
+}
+
+#user {
+    cursor: pointer;
+}

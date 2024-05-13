@@ -1,0 +1,40 @@
+.body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #fff;
+}
+
+.h1 {
+    margin-top: 50px;
+}
+.downloadgrid {
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
+    gap: 20px;
+    justify-items: center;
+}
+.platformbox {
+    border-radius: 5px;
+    padding: 20px;
+    background: #333;
+    text-align: center;
+}
+.platformbox h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #fff;
+}
+.downloadbutton {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #555;
+    color: #fff;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+.downloadbutton:hover {
+    background-color: #777;
+}
