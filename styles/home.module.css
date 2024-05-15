@@ -1,6 +1,7 @@
 @font-face {
   font-family: circular;
-  src: url("./assets/fonts/CircularSpotifyTxT-Medium.woff2") format("woff2");
+  /* import assets/fonts/CircularSpotifyTxT-Medium.woff2" */
+  src: url(../public/assets/fonts/CircularSpotifyTxT-Medium.woff2);
 }
 
 
@@ -71,12 +72,7 @@
   margin-left: 6vw;
 }
 
-#songselector {
-    padding-left: 2vw;
-    display: flex;
-    flex-direction: column;
-    margin-left: 12dvh;
-}
+
 
 #albumpage {
   width: fit-content;
@@ -159,11 +155,6 @@
   right: 10px;
 }
 
-#songselector button {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
 
 #songselector h2 {
   width: auto;
@@ -271,23 +262,7 @@
   padding: 12px 20px 12px 40px;
 }
 
-.album-container {
-  display: flex;
-  flex-direction: row;
-  /* Ensure items are laid out horizontally */
-  overflow-x: auto;
-  white-space: nowrap;
-  width: 100%;
-  /* Ensure it spans the full width of its parent */
-}
 
-.album-container>div {
-  /* Assuming the child elements are divs */
-  min-width: 160px;
-  /* Example min-width, adjust as needed */
-  margin-right: 10px;
-  /* Adjust spacing between items */
-}
 
 .input[type=password] {
   box-sizing: border-box;

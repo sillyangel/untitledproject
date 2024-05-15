@@ -6,6 +6,11 @@
     margin-left: 12dvh;
 }
 
+#songselector button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
 #user {
     right: 100px;
     position: absolute;
@@ -18,3 +23,26 @@
 #user {
     cursor: pointer;
 }
+
+.albumcontainer {
+    display: flex;
+    flex-direction: row;
+    /* Ensure items are laid out horizontally */
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    /* Ensure it spans the full width of its parent */
+  }
+  
+  .albumcontainer > div {
+    /* Assuming the child elements are divs */
+    min-width: 160px;
+    /* Example min-width, adjust as needed */
+    margin-right: 10px;
+    /* Adjust spacing between items */
+  }
+
+  .albumcontainer img {
+    width: 140px;
+    height: 140px;
+  }
